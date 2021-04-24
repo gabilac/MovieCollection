@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - The Joel Hilton Film Collection</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <h1 class="text-center">@ViewBag.Title</h1>
+    <div class="text-center navbar-toggler">
+    <a asp-action="Index">Home Page</a> <!--link to Index-->
+    <a asp-action="EnterMovies">Add More Movies</a> <!--link to add movies-->
+    <a asp-action="Podcasts">Check Out My Podcast</a> <!--link to podcasts-->
+    <a asp-action="AllMovies">See All Movies in the Collection</a> <!--full movie list-->
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <br />
+    <br />
+    <footer class="text-center text-muted"> G. Lacanienta Projects | 2021 </footer>
+
+</body>
+</html>
